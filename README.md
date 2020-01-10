@@ -1,2 +1,1 @@
-# 2bworld
-2bworld website
+# 2B WOrld

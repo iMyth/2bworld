@@ -1,0 +1,15 @@
+{
+  "name": "koa-test",
+  "version": "1.0.0",
+  "description": "koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Myth",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "nodemon": "^2.0.2"
+  }
+}
