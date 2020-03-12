@@ -1,4 +1,197 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
 html,
-div {
-  line-height: 1;
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+}
+.nav-wrapper {
+  height: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}
+.nav-wrapper .b2-nav .MuiButtonBase-root {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+.nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(1) {
+  transition-delay: 100ms;
+}
+.nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(2) {
+  transition-delay: 200ms;
+}
+.nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(3) {
+  transition-delay: 300ms;
+}
+.nav-wrapper .b2-icon-menu {
+  position: absolute;
+  transform: translateX(-100vw);
+  transition: transform 1s cubic-bezier(0.74, 0.88, 0.66, 1);
+  right: 0;
+}
+.nav-wrapper a {
+  display: inline-block;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  color: white;
+}
+.nav-wrapper a.active {
+  color: cyan;
+}
+.nav-wrapper .MuiPaper-root {
+  background-color: #222;
+}
+@media (max-width: 600px) {
+  .nav-wrapper .b2-nav .MuiButtonBase-root {
+    transform: translateX(100vw);
+  }
+  .nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(1) {
+    transition-delay: 300ms;
+  }
+  .nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  .nav-wrapper .b2-nav .MuiButtonBase-root:nth-child(3) {
+    transition-delay: 100ms;
+  }
+  .nav-wrapper .b2-icon-menu {
+    transform: translateX(0);
+  }
+  .nav-wrapper.nav-wrapper-drawer a {
+    width: 11.25rem;
+  }
+}
+body {
+  font-size: 16px;
+  overflow: hidden;
 }
